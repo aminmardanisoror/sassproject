@@ -1,0 +1,16 @@
+@mixin flex-items-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  @mixin prefect-center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  @mixin d-flex($dir:row,$justify:center,$items:center,$wrap:nowrap){
+      display: flex;
+      flex-direction: $dir;
+      align-items: $items;
+      flex-wrap: $wrap;
+  }

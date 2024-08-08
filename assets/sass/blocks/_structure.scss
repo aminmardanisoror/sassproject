@@ -1,0 +1,28 @@
+.structure {
+  background-color: #1ab69d;
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__container {
+    max-width: $max-width-px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //   margin: 0 auto;
+    color: $txt-main;
+    font-size: 25px;
+    font-weight: 400;
+    gap: 60px;
+
+    &__section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      border-left: 1px solid white;
+      padding: 5px 10px;
+    }
+  }
+}

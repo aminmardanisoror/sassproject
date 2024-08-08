@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &__register {
+    background-color: $bg-header;
+
+    &__container {
+      max-width:  $max-width-px;
+      @include prefect-center;
+      height: 50px;
+      margin: 0 auto;
+      color: white;
+      &__conect {
+        display: flex;
+        gap: 20px;
+      }
+      &__login {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        &__a {
+          color: $txt-main;
+        }
+        .applyNow {
+          background-color: $bg-main;
+          color: $txt-main;
+          padding: 10px 30px;
+          margin-top: 0 ;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__navbar {
+    background-color: $bg-light;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    &__container {
+    width:  $max-width-px;
+      @include prefect-center;
+      height: 50px;
+      margin: 0 auto;
+      &__nav{
+        display: flex;
+        gap: 15px;
+        width: 800px;
+        justify-content: flex-end;
+      }
+      &__nav > a {
+        color: $txt-secondary;
+      }
+      &__purches {
+        width: 150px;
+        display: flex;
+        gap: 30px;
+        justify-content: flex-end;
+       
+      }
+    }
+  }
+}
+.applyNow:after {
+  content: " \21AA";
+}
